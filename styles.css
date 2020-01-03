@@ -1,0 +1,16 @@
+.head {
+  background-color: lightblue;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.head h1 {
+  transition: transform ease 0.15s;
+}
+
+.head h1:hover {
+  transform: scale(1.5);
+}
