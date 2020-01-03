@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Annur</title>
-    <link rel="icon" href="#" />
+    <link rel="icon" href="../../../Pictures/profile picture.png" />
+    <title>Annur Eirfan | Junior Developer</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!-- BOOTSTRAP 4.4 -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -16,9 +26,9 @@
   </head>
   <body>
     <!---------------------------------------------- NAV START ----------------------------------------------------->
-    <header class=" fixed-top ">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Annur</a>
+    <header class="container fixed-top">
+      <nav class="navbar navbar-expand-lg nav-custom">
+        <h3 style="color: white;">Annur</h3>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,21 +38,22 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa fa-th-list menu-icon"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#main"
-                >Home <span class="sr-only">(current)</span></a
-              >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section1">Details</a>
+              <a class="nav-link" href="#details">Details</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section2">Experience</a>
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
           </ul>
         </div>
@@ -50,11 +61,15 @@
     </header>
     <!--------------------------------------------------------- NAV END ------------------------------------------------>
     <!-------------------------------------------------------- BODY START ----------------------------------------------->
-    <section id="main" class="hero">
-      <h1 class="diplay-3">Home</h1>
+
+    <section id="home" class="hero here">
+      <h1 class="display-3">Hello</h1>
+      <h3>Lorem Ipsum</h3>
     </section>
-    <section id="section1"><h1>Details</h1></section>
-    <section id="section2"><h1>Experience</h1></section>
+    <section id="details"><h1>Details</h1></section>
+    <section id="education"><h1>Education</h1></section>
+    <section id="experience"><h1>Experience</h1></section>
+
     <!--------------------------------------------------------- BODY END --------------------------------------------------->
     <!---------------------------------------------------------- SCRIPTS ------------------------------------------------------->
     <script

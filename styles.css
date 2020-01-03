@@ -1,14 +1,26 @@
 html {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 section {
   height: 100vh;
+  scroll-snap-align: start;
+  color: white;
+  background: radial-gradient(
+    circle,
+    rgba(107, 107, 107, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -23,16 +35,42 @@ section {
 }
 
 header nav {
-  height: 7vh;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-#section1 {
+header nav a {
+  color: white;
+  transition: transform ease 0.2s;
+}
+
+header nav a:hover {
+  transform: scale(1.5);
+  color: orangered;
+}
+
+#details {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#section2 {
+
+#experience {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  color: white;
+}
+
+.nav-item {
+  margin: 0 30px 0 30px;
 }
